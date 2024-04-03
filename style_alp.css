@@ -1,0 +1,59 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px; 
+    background-color: #ccc; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.part {
+    background-color: #777; 
+    color: #fff;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 50px; 
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+.part.active {
+    background-color: #555; 
+}
+
+.content {
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+h1:hover{
+    animation: color-change 3s infinite;
+}
